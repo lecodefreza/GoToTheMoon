@@ -1,0 +1,47 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Go To The Moon</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+		<a href="#" class="logo">Logo</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">Nous Connaitre</a></li>
+			<li><a href="#">Projet</a></li>
+			<li><a href="#">Contact</a></li>	
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="text">Go To The Moon</h2>
+		<a href="#sec" id="btn">Explore</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+		<h2> SpaceWar At the Moon </h2><br>
+		<p>La Lunenote 1 est l'unique satellite naturel permanent de la planète Terre. Il s'agit du cinquième plus grand satellite naturel du Système solaire par son diamètre de 2 500 km, et du plus grand des satellites planétaires par rapport à la taille de la planète autour de laquelle il orbite. Elle est le deuxième satellite le plus dense du Système solaire après Io, un satellite de Jupiternote 2 La distance orbitale moyenne de la Lune est de 384 402 km, soit environ trente fois le diamètre terrestre, et sa période de révolution vaut 27,3 jours. La taille apparente de la Lune dans le ciel est <br><br>approximativement la même que celle du Soleil, Puisque le diamètre de l'étoile est environ 400 fois celui du satellite, mais qu'elle est également 400 fois plus éloignée. Par conséquent, la Lune peut couvrir presque exactement le Soleil dans le ciel, permettant l'apparition d'éclipses solaires totales. Cette correspondance de taille apparente disparaîtra dans un avenir lointain du fait de l'augmentation de la distance lunaire d'environ 3,8 cm par an. <br><br>La formation de la Lune remonterait à il y a environ 4,51 milliards d'années, peu de temps après celle de la Terre. L'explication la plus largement acceptée est que la Lune s'est formée à partir des débris restants après un impact géant entre une proto-Terre et une protoplanète de la taille de Mars, appelée Théia.</p>
+
+	</div>
+	<script>
+		let stars =  document.getElementById("stars");
+		let monn =  document.getElementById("moon");
+		let mountains_behind = document.getElementById('mountains_behind');
+		let text =  document.getElementById("text");
+		let btn =  document.getElementById("btn");
+		let mountains_front  =  document.getElementById("mountains_front");
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 0.85 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			text.style.marginLeft = value * 2 + 'px'
+		})
+	</script>
+	</body>
+	</html>
